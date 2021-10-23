@@ -1,1 +1,9 @@
 $vue-color: #42b983;
+
+// example map variable
+$alert: (
+  // 'key': 'value
+    'warning': orange,
+    'success': green,
+    'primary': white
+);

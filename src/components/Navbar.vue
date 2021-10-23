@@ -23,9 +23,10 @@ export default {
 
 span{
     display: block;
-    color: white;
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* example using  map variable*/
+    color: map-get($alert, 'primary');
 }
 }
 
