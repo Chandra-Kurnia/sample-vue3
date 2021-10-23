@@ -11,16 +11,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .NavbarWrapper{
     width: 100%;
     height: 70px;
-    background-color: #42b983;
+    background-color: $vue-color;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
 
 span{
     display: block;
@@ -28,4 +27,6 @@ span{
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+}
+
 </style>
