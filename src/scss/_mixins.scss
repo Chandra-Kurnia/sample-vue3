@@ -1,0 +1,21 @@
+// @mixin = create new mixin
+// @include = call mixin
+
+// simple mixin with arguments & default arguments
+@mixin list($bg-color: white, $margin-top: 0px, $margin-left: 0px) {
+    padding: 0;
+    margin-top: $margin-top;
+    margin-left: $margin-left;
+    list-style: none;
+    li {
+        padding: 10px;
+        display: inline-block;
+        background-color: $bg-color
+    }
+}
+
+@mixin flex($direction: row) {
+    display: flex;
+    align-content: left;
+    flex-direction: $direction;
+}
