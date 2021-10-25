@@ -18,11 +18,16 @@
       <li>List 5</li>
     </ul>
   </div>
+  <CircleComponent :circle="true"></CircleComponent>
 </template>
 
 <script>
+import CircleComponent from '../components/CircleComponent.vue'
 export default {
   name: 'Home',
+  components: {
+    CircleComponent
+  }
 };
 </script>
 
@@ -38,7 +43,7 @@ export default {
 .list2{
     @include flex();
     ul{
-        @include list(gray, 30px, 50px);
+        @include list(gray, 20px, 50px);
     }
 }
 </style>

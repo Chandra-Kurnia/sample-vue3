@@ -19,3 +19,12 @@
     align-content: left;
     flex-direction: $direction;
 }
+
+@mixin circle($isCircle: false, $bg: white) {
+    width: 200px;
+    height: 200px;
+    background-color: $bg;
+    @if $isCircle == true {
+        border-radius: 50%;
+    }
+}

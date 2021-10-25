@@ -20,6 +20,8 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  top: 0%;
 
   &:hover{
       background-color: $primary-color;

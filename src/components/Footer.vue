@@ -15,7 +15,8 @@ export default {
         width: 100%;
         height: 100px;
         background-color: #42b983;
-        position: absolute;
+        position: relative;
         bottom: 0;
+        margin-top: 20px;
     }
 </style>
