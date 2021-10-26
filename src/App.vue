@@ -3,9 +3,10 @@
     <div class="Navigation">
       <router-link class="link" active-class="active" to="/">Home</router-link>
       <router-link class="link" active-class="active" to="/about">About</router-link>
+      <router-link class="link" active-class="active" to="/auth">Auth</router-link>
     </div>
   </Navbar>
-  <router-view class="content" />
+  <router-view/>
   <Footer>
   </Footer>
 </template>
@@ -47,5 +48,18 @@ export default {
 
 .active {
   border-bottom: 4px solid rgb(179, 255, 0);
+}
+
+.wrapper{
+    min-height: 80vh;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.form-auth{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 </style>

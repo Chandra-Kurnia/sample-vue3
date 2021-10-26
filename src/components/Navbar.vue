@@ -23,12 +23,12 @@ export default {
   position: absolute;
   top: 0%;
 
-  &:hover{
+  /* &:hover{
       background-color: $primary-color;
       span{
           color: blue;
       }
-  }
+  } */
 
   span {
     display: block;
