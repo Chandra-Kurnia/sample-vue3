@@ -3,37 +3,64 @@
 
 // simple mixin with arguments & default arguments
 @mixin list($bg-color: white, $margin-top: 0px, $margin-left: 0px) {
-    padding: 0;
-    margin-top: $margin-top;
-    margin-left: $margin-left;
-    list-style: none;
-    li {
-        padding: 10px;
-        display: inline-block;
-        background-color: $bg-color
-    }
+  padding: 0;
+  margin-top: $margin-top;
+  margin-left: $margin-left;
+  list-style: none;
+  li {
+    padding: 10px;
+    display: inline-block;
+    background-color: $bg-color;
+  }
 }
 
 @mixin flex($direction: row) {
-    display: flex;
-    align-content: left;
-    flex-direction: $direction;
+  display: flex;
+  align-content: left;
+  flex-direction: $direction;
 }
 
 @mixin circle($isCircle: false, $bg: white) {
-    width: 200px;
-    height: 200px;
-    background-color: $bg;
-    @if $isCircle == true {
-        border-radius: 50%;
-    }
+  width: 200px;
+  height: 200px;
+  background-color: $bg;
+  @if $isCircle == true {
+    border-radius: 50%;
+  }
 }
 
-@mixin gradient(){
-    padding: 1px;
-    border: 3px solid gray;
-    width: calc(50px * 12);
-    margin-left: 10px;
-    margin-top: 10px;
-  
+@mixin gradient() {
+  padding: 1px;
+  border: 3px solid gray;
+  width: calc(50px * 12);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+// Example built in
+// adjust-color rgb setting for color
+// adjust-hue rotation color wheel
+// Complement, warna yang berlawanan 180derajat dengan parameter yang diberikan, ex: black >< white
+// darken mau berapa % lebih gelap mendekati pinggir dari color wheel
+// lighten kebalikan dari darken, mendekati tengah color wheel
+// saturate membuat sebuah warna lebih jelas
+// desaturate membuat warna lebih pudar
+// grayscale membuat warna desaturate 100% secara langsung
+// mix(color1, color2, jumlah warna pertama) mencampur 2 buah warna
+// fade in menambah transparansi, syaratnya sebuah warna harus memiliki transparasi
+// fade out kebalikan dari fade in
+@mixin square() {
+  width: 200px;
+  height: 200px;
+  //   background-color: adjust-color($color: $vue-color, $red: 1, $green: 2, $blue: 3)
+  //   background-color: adjust-hue($color: $vue-color, $degrees: 50deg)
+  //   background-color: complement($color: $vue-color)
+  //   background-color: darken($color: $vue-color, $amount: 20%)
+  //   background-color: lighten($color: $vue-color, $amount: 20%)
+  //   background-color: saturate($color: $vue-color, $amount: 50%)
+  //   background-color: desaturate($color: $vue-color, $amount: 10%)
+  //   background-color: grayscale($color: $vue-color)
+  //   background-color: mix(black, blue, 10%)
+//   background-color: fade-in($color: rgba(250, 128, 114, 0.1), $amount: 0.3);
+  background-color: fade-out($color: $vue-color, $amount: 0.6);
 }

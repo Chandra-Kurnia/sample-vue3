@@ -56,6 +56,9 @@
       <li class="twitch">Twitch</li>
     </ul>
   </div>
+  <div class="square">
+
+  </div>
 </template>
 
 <script>
@@ -143,5 +146,9 @@ export default {
       }
     }
   }
+}
+
+.square{
+  @include square()
 }
 </style>
