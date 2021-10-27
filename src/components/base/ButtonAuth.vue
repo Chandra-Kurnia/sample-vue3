@@ -1,5 +1,5 @@
 <template>
-    <button class="button-auth">
+    <button class="button-auth" @click="click">
         <slot></slot>
     </button>
 </template>
@@ -7,6 +7,11 @@
 <script>
 export default {
     name: 'ButtonAuth',
+    methods: {
+        click(){
+            this.$emit('button-clicked')
+        }
+    }
 }
 </script>
 

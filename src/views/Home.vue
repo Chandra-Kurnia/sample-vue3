@@ -63,7 +63,6 @@
 
 <script>
 import CircleComponent from '../components/CircleComponent.vue'
-console.log(this);
 export default {
   name: 'Home',
   components: {
