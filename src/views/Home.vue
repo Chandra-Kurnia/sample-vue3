@@ -1,5 +1,5 @@
 <template>
-  <h1>Ini halaman home {{ $route.query.id }}</h1>
+  <h1>Ini halaman home, hello {{ name }} with id {{ id }}</h1>
   <div class="list">
     <ul>
       <li>List 1</li>
@@ -69,8 +69,18 @@ export default {
   components: {
     CircleComponent
   },
+  data(){
+    return{
+      id: ''
+    }
+  },
   mounted(){
-    console.log(this.$route.query);
+    if(this.$route.query.id){
+      this.id = this.$route.query.id
+    }
+  },
+  props: {
+    name: String
   }
 };
 </script>
