@@ -1,5 +1,5 @@
 <template>
-  <h1>Ini halaman home</h1>
+  <h1>Ini halaman home {{ $route.query.id }}</h1>
   <div class="list">
     <ul>
       <li>List 1</li>
@@ -63,10 +63,14 @@
 
 <script>
 import CircleComponent from '../components/CircleComponent.vue'
+console.log(this);
 export default {
   name: 'Home',
   components: {
     CircleComponent
+  },
+  mounted(){
+    console.log(this.$route.query);
   }
 };
 </script>
