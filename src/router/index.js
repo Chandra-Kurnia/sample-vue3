@@ -13,7 +13,7 @@ const routes = [
         props: route => ({name: route.query.name})
     },
     {
-        path: '/about',
+        path: '/about/:name',
         name: 'About',
         component: About
     },

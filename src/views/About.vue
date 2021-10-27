@@ -1,11 +1,19 @@
 <template>
 <div class="wrapper">
-    <h1>Ini halaman about</h1>
+    <h1>Ini halaman about, {{ name }}</h1>
 </div>
 </template>
 
 <script>
 export default {
-    name: 'About'
+    name: 'About',
+    data(){
+        return{
+            name: ''
+        }
+    },
+    mounted(){
+        this.name = this.$route.params.name;
+    }
 }
 </script>
