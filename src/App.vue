@@ -4,6 +4,7 @@
       <router-link class="link" active-class="active" to="/">Home</router-link>
       <router-link class="link" active-class="active" to="/about">About</router-link>
       <router-link class="link" active-class="active" to="/auth">Auth</router-link>
+      <router-link class="link" active-class="active" to="/fetch">Fetch</router-link>
     </div>
   </Navbar>
     <router-view></router-view>
@@ -28,7 +29,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   padding-top: 70px;
 }

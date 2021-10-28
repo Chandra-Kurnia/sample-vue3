@@ -4,6 +4,7 @@ import About from '../views/About.vue'
 import Auth from '../views/Auth.vue'
 import FormSignin from '../components/module/FormSignin.vue'
 import FormSignup from '../components/module/FormSignup.vue'
+import Fetch from '../views/Fetch.vue'
 
 const routes = [
     {
@@ -32,6 +33,11 @@ const routes = [
                 component: FormSignup
             }
         ]
+    },
+    {
+        path: '/fetch',
+        name: 'fetch',
+        component: Fetch
     }
 ]
 
