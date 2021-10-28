@@ -1,6 +1,6 @@
 <template>
 <div class="wrapper">
-    <h1>Ini halaman about, {{ name }}</h1>
+    <h1>Ini halaman about, {{ name ? name : 'Yourname Here' }}</h1>
 </div>
 </template>
 

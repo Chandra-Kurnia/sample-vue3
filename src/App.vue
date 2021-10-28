@@ -6,20 +6,19 @@
       <router-link class="link" active-class="active" to="/auth">Auth</router-link>
     </div>
   </Navbar>
-  <router-view/>
-  <Footer>
-  </Footer>
+    <router-view></router-view>
+  <Footer> </Footer>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue';
-import Footer from './components/Footer.vue'
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Footer
+    Footer,
   },
 };
 </script>
@@ -50,16 +49,17 @@ export default {
   border-bottom: 4px solid rgb(179, 255, 0);
 }
 
-.wrapper{
-    min-height: 80vh;
-    position: relative;
-    padding-left: 100px;
-    padding-right: 100px;
+.wrapper {
+  min-height: 80vh;
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.form-auth{
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+.form-auth {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 </style>

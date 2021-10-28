@@ -13,7 +13,7 @@ const routes = [
         props: route => ({name: route.query.name})
     },
     {
-        path: '/about/:name',
+        path: '/about/:name?',
         name: 'About',
         component: About
     },
@@ -21,9 +21,10 @@ const routes = [
         path: '/auth',
         name: 'Auth',
         component: Auth,
+        redirect: '/auth/login',
         children: [
             {
-                path: 'signin',
+                path: 'login',
                 component: FormSignin
             },
             {
